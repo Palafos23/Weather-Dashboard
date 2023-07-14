@@ -53,7 +53,7 @@ function saveHistory(){
 }
 
 function cityApi(city) {
-  var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + apiKey;
+  var requestUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + apiKey;
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
